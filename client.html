@@ -1,14 +1,26 @@
 <html>
     <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/consultarct.js"></script>
+        <script type="text/javascript" src="js/guardarct.js"></script>
+        <script type="text/javascript" src="js/eliminarct.js"></script>
     </head>
 
     <body>
-        <h1>client</h1>
-        <h4>clientes ...</h4>
+        <h1>Gestión de Clientes</h1>
+        <h4>Registrar cliente</h4>
         ID <input type="number" id="id" /> <br/>
         Nombre <input type="text" id="name" /> <br/>
         Email <input type="text" id="email" /> <br/>
-        Edad <input type="text" id="age" /> <br/>
-        <button onclick="guardar()">Guardar</button>
+        Edad <input type="number" id="age" /> <br/>
+        <button onclick="guardarct()">Guardar</button>
+
+        <h4>Clientes Registrados</h4>
+        <button onclick="consultarct()">Consultar Datos</button>
+        <div id="tabla">
+          <!-- Esto es un comentario en html y, 
+            puede ser multilinea  --> 
+        </div>
+
     </body>
 </html>
